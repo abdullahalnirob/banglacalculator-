@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>বাংলা কালকুলেটর</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>বাংলা কালকুলেটর</h1>
+        </header>
+        <div class="feilds">
+            <input type="number" id="number1" placeholder="প্রথম সংখ্যা দেন।">
+            <input type="number" id="number2" placeholder="দ্বীতিয় সংখ্যা দেন।">
+            <label for="" style="margin: 8px 0;">মেথড সিলেক্ট করুন।</label>
+            <!-- <div>
+                <label for="plus">+</label>
+                <input type="radio" name="name" class="option" id="plus">
+                <label for="minus">-</label>
+                <input type="radio" name="name" class="option" id="minus">
+                <label for="gun">*</label>
+                <input type="radio" name="name" class="option" id="gun">
+                <label for="vag">/</label>
+                <input type="radio" name="name" class="option" id="vag">
+            </div> -->
+            
+            <div class="option">
+    <label for="radio-one" class="form-radio-hidden">
+        <input type="radio" name="demo" value="one" id="radio-one">
+        <span class="radio"></span>
+        <span class="text">যোগ</span>
+    </label>
+    <label for="radio-two" class="form-radio-hidden">
+        <input type="radio" name="demo" value="one" id="radio-two">
+        <span class="radio"></span>
+        <span class="text">বিয়োগ</span>
+    </label>
+    <label for="radio-three" class="form-radio-hidden">
+        <input type="radio" name="demo" value="one" id="radio-three">
+        <span class="radio"></span>
+        <span class="text">গুণ</span>
+    </label>
+    <label for="radio-four" class="form-radio-hidden">
+        <input type="radio" name="demo" value="one" id="radio-four">
+        <span class="radio"></span>
+        <span class="text">ভাগ</span>
+    </label>
+</div>
+            <h1>ফলাফল : <span id="result"></span></h1>
+            <button id="submit">কালকুলেট করুন</button>
+        </div>
+        <footer>
+           <center>
+            <p>&copy; Developed by <span id="open">Abdullah Al Nirob</span></p>
+           </center>
+        </footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="./app.js"></script>
+</body>
+
+</html>

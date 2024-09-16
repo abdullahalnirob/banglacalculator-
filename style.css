@@ -1,0 +1,168 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Hind Siliguri", sans-serif;
+    font-style: normal;
+}
+body{
+    background-color: #ebebeb;
+}
+button{
+    outline: none;
+}
+.text{
+    font-family: "Hind Siliguri", sans-serif !important;
+    font-size: 20px !important;
+}
+#open{
+    color: #002fff;
+    cursor: pointer;
+}
+.container{
+    position: absolute;
+    background-color: #fefefe;
+    padding:50px 70px ;
+    border-radius: 10px;
+    box-shadow: 1px 1px 4px #ccc;
+    /* height: 300px; */
+
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.container .feilds{
+    display: flex;
+    flex-direction: column;
+}
+.container .feilds #number1,#number2{
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #868686;
+    border-radius: 8px;
+    outline: none;
+    font-size: 17px;
+    font-weight: 400;
+    /* font-family: "Poppins"; */
+    width: 300px;
+}
+
+.container .feilds #number1:hover,#number2:hover{
+    outline:1px solid #494848;
+    border-radius: 8px;
+}
+.container h1{
+    font-size: 30px;
+}
+.container .feilds button{
+    margin: 10px 0;
+    padding:5px 7px;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: 400;
+    background-color: #2c2c2c;
+    border: 1px solid #2c2c2c;
+    color: #ccc;
+    cursor: pointer;
+    transition: .3s;
+}
+.container button:hover{
+    background-color: #494848;
+}
+.option{
+    /* padding: 4px; */
+}
+footer p{
+    margin-top: 30px;
+    font-family: "Poppins",sans-serif;
+    font-weight: 500;
+}
+
+
+/* radio */
+
+  .form-radio-hidden input{
+    position: absolute;
+    opacity: 0;
+    display: block;
+    height: 0;
+    width: 0;
+  }
+  .form-radio-hidden .radio{
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    display: inline-block;
+    position: relative;
+    height: 20px;
+    width: 20px;
+    border-radius: 20px;
+    margin-right: 5px;
+    border: 1px solid #999999;
+    background-color: #ffffff;
+    box-shadow: 0 0 4px 0 rgba(0,0,0,0.1);
+    cursor: pointer;
+    outline: none;
+    box-sizing: border-box;
+    transition: .5s all;
+  }
+  .form-radio-hidden:hover .radio{
+    background-color: #f9f9f9;
+    box-shadow: inset 1px 2px 3px 0 rgba(0,0,0,0.1);
+  }
+  .form-radio-hidden input:checked + .radio{
+    border-color: #555;
+    background-color: #f9f9f9;
+    box-shadow: inset 1px 2px 3px 0 rgba(0,0,0,0.1);
+    cursor: default;
+  }
+  .form-radio-hidden:hover .radio::before, .form-radio-hidden input:checked + .radio::before{
+    content: '';
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    border-radius: 8px;
+    background-color: #ddd;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+  }
+  .form-radio-hidden input:checked + .radio::before{
+    background-color: #555;
+    box-shadow: 1px 2px 2px 0 rgba(0,0,0,0.2);
+  }
+  .form-radio-hidden input + .radio + .text{
+    color: #777;
+    cursor: pointer;
+    font-size: 14px;
+    line-height: 1.4;
+    font-family: sans-serif;
+    margin-right: 10px;
+    align-self: center;
+  }
+  .form-radio-hidden input:checked + .radio + .text{
+    color: #555;
+    cursor: default;
+  }
+/* radio */
+
+
+
+@media (max-width:540px) {
+    .container .feilds #number1:hover,#number2:hover{
+        outline: 0;
+    }
+    .container .feilds #number1,#number2{
+        width: 280px;
+        font-size: 18px;
+        border-radius: 8px;
+    }
+    .container{
+        padding:40px;
+        padding-bottom: 100px;
+    }
+}
+@media (max-width:375px) {
+    .container{
+        padding:40px 20px;
+    }
+}
